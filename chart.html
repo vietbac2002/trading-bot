@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BTC/USDT Trading Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .chart-container { margin-bottom: 40px; }
+    .stats { background: #f5f5f5; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <h1>BTC/USDT Trading Dashboard</h1>
+  
+  <div class="stats">
+    <h3>Trading Statistics</h3>
+    <p><strong>Total Trades:</strong> 27</p>
+    <p><strong>Current Benefit:</strong> $0.00</p>
+    <p><strong>Last Update:</strong> 2025-08-20 17:38:57</p>
+  </div>
+
+  <div class="chart-container">
+    <h2>Price Comparison (Average vs Last Price)</h2>
+    <canvas id="priceChart" width="800" height="400"></canvas>
+  </div>
+
+  <div class="chart-container">
+    <h2>Trading Benefit Over Time</h2>
+    <canvas id="benefitChart" width="800" height="400"></canvas>
+  </div>
+
+  <script>
+    const times = ["2025-08-20 15:41:16","2025-08-20 15:42:18","2025-08-20 15:43:19","2025-08-20 15:44:21","2025-08-20 15:45:23","2025-08-20 15:46:25","2025-08-20 15:47:26","2025-08-20 15:48:28","2025-08-20 15:49:30","2025-08-20 15:50:31","2025-08-20 15:51:32","2025-08-20 15:52:34","2025-08-20 15:53:35","2025-08-20 15:54:37","2025-08-20 15:55:39","2025-08-20 15:56:40","2025-08-20 15:57:42","2025-08-20 15:58:43","2025-08-20 15:59:45","2025-08-20 16:00:46","2025-08-20 16:01:47","2025-08-20 16:02:49","2025-08-20 16:03:50","2025-08-20 16:04:51","2025-08-20 17:37:39","2025-08-20 17:38:39","2025-08-20 17:38:57"];
+    const avgPrices = [113825.15,113842.59,113844.34,113873.66,113910.8,113931.05,113951.49,113954.38,113948.92,113931.06,113925.37,113916.25,113893.16,113885.5,113885.46,113888,113921.81,113951.2,113975.99,113982.4,113956.63,113944.31,113917.49,113875.52,0,0,113624.47];
+    const lastPrices = [113831.64,113878.78,113851.89,113903.64,113955.86,113960,113957.19,113942.67,113942.68,113908.19,113908.2,113910,113849.95,113892.46,113908,113907.99,113952.1,114016.46,114016.45,113940.01,113883.36,113877.88,113857.19,113821.78,0,0,113629.58];
+    const benefits = [0,47.07,20.25,71.82,123.81,127.94,125.15,110.73,110.74,76.43,76.44,78.23,18.34,60.78,76.28,76.27,120.19,184.21,184.2,108.29,51.99,46.54,25.94,-9.34,0,0,0];
+
+    // Price Chart
+    const priceCtx = document.getElementById('priceChart').getContext('2d');
+    new Chart(priceCtx, {
+      type: 'line',
+      data: {
+        labels: times,
+        datasets: [{
+          label: 'Average Price',
+          data: avgPrices,
+          borderColor: 'blue',
+          backgroundColor: 'rgba(0, 0, 255, 0.1)',
+          fill: false
+        }, {
+          label: 'Last Price',
+          data: lastPrices,
+          borderColor: 'red',
+          backgroundColor: 'rgba(255, 0, 0, 0.1)',
+          fill: false
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          x: { 
+            display: true,
+            title: { display: true, text: 'Time' }
+          },
+          y: { 
+            display: true,
+            title: { display: true, text: 'Price (USDT)' }
+          }
+        }
+      }
+    });
+
+    // Benefit Chart
+    const benefitCtx = document.getElementById('benefitChart').getContext('2d');
+    new Chart(benefitCtx, {
+      type: 'line',
+      data: {
+        labels: times,
+        datasets: [{
+          label: 'Trading Benefit (USDT)',
+          data: benefits,
+          borderColor: benefits[benefits.length - 1] >= 0 ? 'green' : 'red',
+          backgroundColor: benefits[benefits.length - 1] >= 0 ? 'rgba(0, 255, 0, 0.1)' : 'rgba(255, 0, 0, 0.1)',
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          x: { 
+            display: true,
+            title: { display: true, text: 'Time' }
+          },
+          y: { 
+            display: true,
+            title: { display: true, text: 'Benefit (USDT)' }
+          }
+        }
+      }
+    });
+
+    // Auto-refresh every minute
+    setTimeout(() => {
+      window.location.reload();
+    }, 60000);
+  </script>
+</body>
+</html>

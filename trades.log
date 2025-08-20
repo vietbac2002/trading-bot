@@ -1,0 +1,27 @@
+{"time":"2025-08-20 15:41:16","price":113825.15,"lastPrice":113831.64,"benefit":0,"direction":"sell","quantity":0.00087849,"tradeNumber":1}
+{"time":"2025-08-20 15:42:18","price":113842.59,"lastPrice":113878.78,"benefit":47.07,"direction":"sell","quantity":0.00087813,"tradeNumber":2}
+{"time":"2025-08-20 15:43:19","price":113844.34,"lastPrice":113851.89,"benefit":20.25,"direction":"sell","quantity":0.00087833,"tradeNumber":3}
+{"time":"2025-08-20 15:44:21","price":113873.66,"lastPrice":113903.64,"benefit":71.82,"direction":"sell","quantity":0.00087794,"tradeNumber":4}
+{"time":"2025-08-20 15:45:23","price":113910.8,"lastPrice":113955.86,"benefit":123.81,"direction":"sell","quantity":0.00087753,"tradeNumber":5}
+{"time":"2025-08-20 15:46:25","price":113931.05,"lastPrice":113960,"benefit":127.94,"direction":"sell","quantity":0.0008775,"tradeNumber":6}
+{"time":"2025-08-20 15:47:26","price":113951.49,"lastPrice":113957.19,"benefit":125.15,"direction":"sell","quantity":0.00087752,"tradeNumber":7}
+{"time":"2025-08-20 15:48:28","price":113954.38,"lastPrice":113942.67,"benefit":110.73,"direction":"buy","quantity":0.00087763,"tradeNumber":8}
+{"time":"2025-08-20 15:49:30","price":113948.92,"lastPrice":113942.68,"benefit":110.74,"direction":"buy","quantity":0.00087763,"tradeNumber":9}
+{"time":"2025-08-20 15:50:31","price":113931.06,"lastPrice":113908.19,"benefit":76.43,"direction":"buy","quantity":0.0008779,"tradeNumber":10}
+{"time":"2025-08-20 15:51:32","price":113925.37,"lastPrice":113908.2,"benefit":76.44,"direction":"buy","quantity":0.0008779,"tradeNumber":11}
+{"time":"2025-08-20 15:52:34","price":113916.25,"lastPrice":113910,"benefit":78.23,"direction":"buy","quantity":0.00087789,"tradeNumber":12}
+{"time":"2025-08-20 15:53:35","price":113893.16,"lastPrice":113849.95,"benefit":18.34,"direction":"buy","quantity":0.00087835,"tradeNumber":13}
+{"time":"2025-08-20 15:54:37","price":113885.5,"lastPrice":113892.46,"benefit":60.78,"direction":"sell","quantity":0.00087802,"tradeNumber":14}
+{"time":"2025-08-20 15:55:39","price":113885.46,"lastPrice":113908,"benefit":76.28,"direction":"sell","quantity":0.0008779,"tradeNumber":15}
+{"time":"2025-08-20 15:56:40","price":113888,"lastPrice":113907.99,"benefit":76.27,"direction":"sell","quantity":0.0008779,"tradeNumber":16}
+{"time":"2025-08-20 15:57:42","price":113921.81,"lastPrice":113952.1,"benefit":120.19,"direction":"sell","quantity":0.00087756,"tradeNumber":17}
+{"time":"2025-08-20 15:58:43","price":113951.2,"lastPrice":114016.46,"benefit":184.21,"direction":"sell","quantity":0.00087707,"tradeNumber":18}
+{"time":"2025-08-20 15:59:45","price":113975.99,"lastPrice":114016.45,"benefit":184.2,"direction":"sell","quantity":0.00087707,"tradeNumber":19}
+{"time":"2025-08-20 16:00:46","price":113982.4,"lastPrice":113940.01,"benefit":108.29,"direction":"buy","quantity":0.00087765,"tradeNumber":20}
+{"time":"2025-08-20 16:01:47","price":113956.63,"lastPrice":113883.36,"benefit":51.99,"direction":"buy","quantity":0.00087809,"tradeNumber":21}
+{"time":"2025-08-20 16:02:49","price":113944.31,"lastPrice":113877.88,"benefit":46.54,"direction":"buy","quantity":0.00087813,"tradeNumber":22}
+{"time":"2025-08-20 16:03:50","price":113917.49,"lastPrice":113857.19,"benefit":25.94,"direction":"buy","quantity":0.00087829,"tradeNumber":23}
+{"time":"2025-08-20 16:04:51","price":113875.52,"lastPrice":113821.78,"benefit":-9.34,"direction":"buy","quantity":0.00087857,"tradeNumber":24}
+{"time":"2025-08-20 17:37:39","price":0,"lastPrice":0,"benefit":0,"error":"binance requires \"secret\" credential"}
+{"time":"2025-08-20 17:38:39","price":0,"lastPrice":0,"benefit":0,"error":"binance requires \"secret\" credential"}
+{"time":"2025-08-20 17:38:57","price":113624.47,"lastPrice":113629.58,"benefit":0,"direction":"sell","quantity":0.00088005,"tradeNumber":1}
